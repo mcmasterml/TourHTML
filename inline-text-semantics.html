@@ -1,0 +1,58 @@
+<!DOCTYPE = html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Inline Text Semantics</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/inline-text-semantics.css">
+</head>
+<body>
+    <nav>
+        <p><a href="index.html">Home</a></p>
+    </nav>
+    <main>
+        <header>
+            <hgroup>
+                <h1>HTML Inline Text Semantics</h1>
+                <h3>Define the meaning, structure, or style of text</h3>
+            </hgroup>
+            <ul>
+                <li><code>&lt;a&gt;</code>: hyperlink, use with attribute <code>&lt;href&gt;</code></li>
+                <li><code>&lt;abbr&gt;</code>: abbreviation or acronym</li>
+                <li><code>&lt;b&gt;</code>: Don't use (basically). Draw reader's attention to content. DON'T use for styling or granting importance. use CSS <code>&lt;font-weight&gt;</code> instead for styling, and <code>&lt;strong&gt;</code> instead for granting importance</li>
+                <li><code>&lt;bdi&gt;</code>: isolate and handle bi-directional scripts (e.g. hebrew)</li>
+                <li><code>&lt;bdo&gt;</code>: override text directionality. render in different direction.</li>
+                <li><code>&lt;br&gt;</code>: self-closing, line break.</li>
+                <li><code>&lt;cite&gt;</code>: citation</li>
+                <li><code>&lt;code&gt;</code>: computer code</li>
+                <li><code>&lt;data&gt;</code>: think <code>enum</code>. links a given piece of content with a machine-readable translation. associate text with a value (passed as attribute e.g. "value=100" to <code>&lt;data&gt;</code>). use <code>&lt;time&gt;</code> for time/date-related data</li>
+                <li><code>&lt;dfn&gt;</code>: the term being defined. the term is defined by the ancestor <code>&lt;p&gt;</code>, the <code>&lt;dt&gt;</code>/<code>&lt;dd&gt;</code> pairing, or nearest ancestor of the <code>&lt;dfn&gt;</code> element. see <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dfn#links_to_definitions">Links to definitions</a></li>
+                <li><code>&lt;em&gt;</code>: emphasis</li>
+                <li><code>&lt;i&gt;</code>: italics, designates a range set off from the normal text</li>
+                <li><code>&lt;kbd&gt;</code>: textual user input</li>
+                <li><code>&lt;mark&gt;</code>: highlighted or marked text, denotes reference or notation purposes due to relevance in enclosing context</li>
+                <li><code>&lt;q&gt;</code>: inline quotation. compare with <code>&lt;blockquote&gt;</code>, the non-inline relative</li>
+                <li><code>&lt;ruby&gt;</code>: ruby is textual annotation, typically used to show the pronunciation of East Asian typography. renders small annotations above, below, or next to base text.</li>
+                <li><code>&lt;rp&gt;</code>: ruby annotation to provide fall-back parenthesis (not all browsers support ruby notation)</li>
+                <li><code>&lt;rt&gt;</code>: ruby annotation to provide pronunciation, translation, or transliteration</li>
+                <li><code>&lt;s&gt;</code>: strikethrough. However, for indicating document edits, use <code>&lt;del&gt;</code> and <code>&lt;ins&gt;</code> instead</li>
+                <li><code>&lt;samp&gt;</code>: output from a computer program. typically rendered in monospace</li>
+                <li><code>&lt;small&gt;</code>: side-comments, copyright and legal text. independent of its styled presentation</li>
+                <li><code>&lt;span&gt;</code>: generic inline container for phrasing content. the inline version of <code>&lt;div&gt;</code></li>
+                <li><code>&lt;strong&gt;</code>: indicates importance, seriousness, or urgency</li>
+                <li><code>&lt;sub&gt;</code>: subscript</li>
+                <li><code>&lt;sup&gt;</code>: superscript</li>
+                <li><code>&lt;time&gt;</code>: time. include <code>datetime</code> attribute to translate dates into machine-readable format (for better SEO or custom features such as reminders)</li>
+                <li><code>&lt;u&gt;</code>: underline, probably don't use</li>
+                <li><code>&lt;var&gt;</code>: represents variable name in a math or programming context</li>
+                <li><code>&lt;wbr&gt;</code>: optional line break, use for mobile styling? if you want a hyphen, use the soft-hyphen character entity <code>&amp;shy;</code></li>
+            </ul>
+        </header>
+        <section>
+            <h2>Use <code>&lt;kbd&gt;</code> to signify user input</h2>
+            <p>e.g. please press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd>* to re-render an MDN page.<br/><pre>    * Note: this has been styled. otherwise it would be plain monospace.</pre></p>
+        </section>
+    </main>
+</body>
+</html>

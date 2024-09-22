@@ -1,0 +1,70 @@
+<!DOCTYPE = html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Content Sectioning</title>
+    <link stylesheet="styles.css">
+</head>
+<body>
+    <nav>
+        <p><a href="index.html">Home</a></p>
+    </nav>
+    <main>
+        <header>
+            <hgroup>
+                <h1>Content Sectioning - Semantic HTML</h1>
+                <h3>How tags are used to structure and identify sections of content</h3>
+            </hgroup>
+            <ul>
+                <li><code>&lt;address&gt;</code>: contact info</li>
+                <li><code>&lt;article&gt;</code>: self-contained (independent) content</li>
+                <li><code>&lt;aside&gt;</code>: indirectly-related content</li>
+                <li><code>&lt;footer&gt;</code>: footer for nearest ancestor</li>
+                <li><code>&lt;header&gt;</code>: introductory content / navigational aids (heading, logo, search form, author name, etc.)</li>
+                <li><code>&lt;h1&gt;</code> thru <code>&lt;h6&gt;</code>: levels of section headings</li>
+                <li><code>&lt;hgroup&gt;</code>: heading group (e.g. a main heading and a sub heading)</li>
+                <li><code>&lt;main&gt;</code>: dominant content of a the <code>&lt;body&gt;</code> of a document</li>
+                <li><code>&lt;nav&gt;</code>: navbar / navigation links</li>
+                <li><code>&lt;section&gt;</code>: generic standalone section (when a more specific tag does not exist, always use a heading element within)</li>
+                <li><code>&lt;search&gt;</code>: a set of form controls, search, or filtering operations</li>
+            </ul>
+        </header>
+        <section>
+            <hgroup>
+                <h2>Understanding HTML Content Sectioning</h2>
+                <h3>These two headings make an &lt;hgroup&gt;</h3>
+            </hgroup>
+            <p>Let this page be your guide.</p>
+        </section>
+        <section>
+            <hgroup>
+                <h2>Exploring the &lt;nav&gt;Tag</h2>
+                <h3>How to Use This Tag Effectively</h3>
+            </hgroup>
+            <p>The &lt;nav&gt; element is essential for defining navigation menus</p>
+        </section>
+        <article>
+            <h2>The Importance of &lt;article&gt; and &lt;section&gt; Tags</h2>
+                <p>Using &lt;article&gt; for self-contained posts and &lt;section&gt; for grouped content ensures better structure and accessibility.</p>
+        </article>
+        <aside>
+            <h3>Related Articles &lt;aside&gt;</h3>
+            <ul>
+                <li><a href="#">Using Semantic HTML for Better SEO</a></li>
+                <li><a href="#">Accessibility Best Practices</a></li>
+                <li><a href="#">&lt;aside&gt; is useful for content that's tangentially related.</a></li>
+            </ul>
+        </aside>
+
+    </main>
+    <footer>
+        <address>
+            Contact us at <a href="mailto:petermcmaster9@gmail.com">petermcmaster9@gmail.com</a><br/>
+            123 Fake St.<br/>
+            Los Angeles, CA 90069
+        </address>
+        <p>&copy; Peter McMaster 2024</p>
+    </footer>
+</body>
+</html>
