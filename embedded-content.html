@@ -1,0 +1,46 @@
+<!DOCTYPE = html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Embedded Content</title>
+    <link stylesheet="styles/styles.css">
+</head>
+<body>
+    <nav>
+        <p><a href="index.html">Home</a></p>
+    </nav>
+    <main>
+        <header>
+            <h1>Embedded Content</h1>
+        </header>
+        <section>
+            <ul>
+                <li><code>&lt;embed&gt;</code>: embed external content. e.g. external app, browser plug-in, or other source of interactive content</li>
+                <li><code>&lt;fencedframe&gt;</code>: similar to <code>&lt;iframe&gt;</code>, but with more native privacy features. Represents nested browsing context</li>
+                <li><code>&lt;iframe&gt;</code>: Represents nexted browsing context, embedding another HTML page into the current one</li>
+                <li><code>&lt;object&gt;</code>: Represents an external resource, which can be treated as an image, a nested browsing context, or a resource to be handled by a plug-in</li>
+                <li><code>&lt;picture&gt;</code>: give the browser a set of display options for image content. Contains zero or more <code>&lt;source&gt;</code> elements and one <code>&lt;img&gt;</code> element. Browser will consider each source and choose the best, else if no matches will use the img 'src' attribute.</li>
+                <li><code>&lt;portal&gt;</code>: don't use.</li>
+                <li><code>&lt;source&gt;</code>: use with <code>&lt;picture&gt;</code>, <code>&lt;audio&gt;</code>, or <code>&lt;video&gt;</code>. it's a void element (self-closing). commonly used to offer the same media content in multiple formats.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>What is a Browser Plug-in?</h2>
+            <p>Any external module that runs in the browsers. They are kind of <strong>OUTDATED, or PHASED OUT</strong> (e.g. Flash) due to security and compatibility issues. <strong>EXTENSIONS</strong> are the more common term now.</p>
+            <h4>Some potentially useful Browser Plug-ins:</h4>
+            <ul>
+                <li><u>Lighthouse</u>: Google Chrome plug-in to optimize websites, audit performance, SEO, accessibility, and best practices.</li>
+                <li><u>Web Developer Toolbar</u>: Powerful set of web dev tools</li>
+                <li><u>PageSpeed Insights</u></li>
+                <li><u>Web Vitals</u></li>
+                <li><u>PerfectPixel</u>: Overlay tool when working from design mockups (e.g. Figma)</li>
+                <li><u>Netlify Dev Tools</u>: after deploying with Netlify, monitor traffic, uptime, and deploy previews</li>
+                <li><u>SEOquake</u></li>
+                <li><u>Grammarly</u></li>
+                <li><u>BrowserStack</u></li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
