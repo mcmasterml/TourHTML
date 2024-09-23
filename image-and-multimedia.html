@@ -7,7 +7,23 @@
     <link stylesheet="styles/styles.css">
 </head>
 <body>
-    <p><a href="index.html">Home</a></p>
-    <h1>Image and Multimedia</h1>
+    <nav>
+        <p><a href="index.html">Home</a></p>
+    </nav>
+    <main>
+        <header>
+            <h1>Images and Multimedia</h1>
+        </header>
+        <section>
+            <ul>
+                <li><code>&lt;img&gt;</code>: embed an image</li>
+                <li><code>&lt;map&gt;</code>: define an image map (clickable link area). Use with <code>&lt;area&gt;</code></li>
+                <li><code>&lt;area&gt;</code>: defines clickable areas within an image map. e.g. separate sections of same image can have different hyperlinks</li>
+                <li><code>&lt;audio&gt;</code>: embed sound content. use with <code>src</code> attribute. can be destination for streamed media using <a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaStream">MediaStream</a></li>
+                <li><code>&lt;video&gt;</code>: embeds a media player which supports video playback</li>
+                <li><code>&lt;track&gt;</code>: used as child of media elements. for timed text tracks (or time-based data) e.g. subtitles or lyrics</li>
+            </ul>
+        </section>
+    </main>
 </body>
 </html>
