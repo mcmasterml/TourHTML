@@ -1,0 +1,87 @@
+<!DOCTYPE = html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    <link stylesheet="styles/styles.css">
+</head>
+<body>
+    <nav>
+        <p><a href="index.html">Home</a></p>
+    </nav>
+    <main>
+        <header>
+            <h1>Forms</h1>
+            <ul>
+                <li><code>&lt;button&gt;</code>: issa button. takes input (e.g. mouse, keyboard, finger, voice command, etc.), performs an action (e.g. submit form)</li>
+                <li><code>&lt;datalist&gt;</code>: e.g. search list. allows anything to be input, but also can contain a set of <code>&lt;option&gt;</code> elements guiding user choice</li>
+                <li><code>&lt;fieldset&gt;</code>: groups several controls as well as <code>&lt;label&gt;</code>s within a web form</li>
+                <li><code>&lt;form&gt;</code>: section containing interactive controls for submitting information</li>
+                <li><code>&lt;input&gt;</code>: POWERFUL! defines interactive controls for web-based forms to accept user data. see all <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">types and attributes</a></li>
+                <li><code>&lt;label&gt;</code>: represents a caption for an item in a user interface</li>
+                <li><code>&lt;legend&gt;</code>: child of <code>&lt;fieldset&gt;</code>, representing a caption for the content</li>
+                <li><code>&lt;meter&gt;</code>: represents a scalar value within a known range, or a fractional value (e.g. gas tank, scalar graph)</li>
+                <li><code>&lt;optgroup&gt;</code>: e.g. sections in a dropdown list. creates groupings of options within a <code>&lt;select&gt;</code></li>
+                <li><code>&lt;option&gt;</code>: child of either <code>&lt;optgroup&gt;</code> or <code>&lt;datalist&gt;</code>, defining the items contained therein. can represent menu items etc.</li>
+                <li><code>&lt;output&gt;</code>: container element, returning results of a calculation or result of user action</li>
+                <li><code>&lt;progress&gt;</code>: Indicator showing completion progress</li>
+                <li><code>&lt;select&gt;</code>: a control that provides a menu of options</li>
+                <li><code>&lt;textarea&gt;</code>: think longtext. represents a multi-line, plain-text editing control, for sizeable amounts of free-form text (e.g. comment, review, feedback)</li>
+            </ul>
+        </header>
+        <section>
+            <h2><code>&lt;button&gt;</code></h2>
+            <button>Smash this button!</button>
+        </section>
+        <section>
+            <h2><code>&lt;datalist&gt;</code></h2>
+            <p>a datalist presents a set of options for users to choose from</p>
+            <label for="ice-cream-choice">Choose a flavor:</label>
+            <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+            <datalist id="ice-cream-flavors">
+                <option value="Vanilla"></option>
+                <option value="Strawberry"></option>
+                <option value="Chocolate"></option>
+                <option value="Coconut"></option>
+                <option value="Mint"></option>
+                <option value="Salted Caramel"></option>
+            </datalist>
+        </section>
+        <section>
+            <h2><code>&lt;fieldset&gt;</code></h2>
+            <p>presents a set of labeled inputs or controls</p>
+            <form>
+                <fieldset>
+                <legend>Choose your favorite monster (I'm a legend btw)</legend>
+            
+                <input type="radio" id="kraken" name="monster" value="K" />
+                <label for="kraken">Kraken</label><br />
+            
+                <input type="radio" id="sasquatch" name="monster" value="S" />
+                <label for="sasquatch">Sasquatch</label><br />
+            
+                <input type="radio" id="mothman" name="monster" value="M" />
+                <label for="mothman">Mothman</label>
+                </fieldset>
+            </form>
+        </section>
+        <section>
+            <h2><code>&lt;meter&gt;</code></h2>
+            <label for="fuel">Fuel level:</label>
+            <meter id="fuel" min="0" max="100" low="33" high="66" optimum="80" value="30">at 50/100</meter>
+        </section>
+        <section>
+            <h2><code>&lt;progress&gt;</code></h2>
+            <label for="file">File progress:</label>
+            <progress id="file" max="100" value="70">70%</progress>
+        </section>
+        <section>
+            <h2><code>&lt;textarea&gt;</code></h2>
+            <label for="story">Tell us your story:</label>
+            <br/>
+            <textarea id="story" rows="5" cols="33">It was a dark and stormy night...</textarea>
+        </section>
+    </main>
+</body>
+</html>
