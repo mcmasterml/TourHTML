@@ -29,7 +29,8 @@
         <ul><li>next html element will begin on a New Line</li></ul>
         <h2>CSS Flexbox</h2>
         <h3>A row container with 3 pieces of content</h3>
-        <div class="row space-evenly">
+        <p>space-evenly</p>
+        <div class="flex-container space-evenly">
             <div class="card red">
                 <p>red</p>
             </div>
@@ -40,12 +41,88 @@
                 <p>green</p>
             </div>
         </div>
+        <p>flex-inline won't care about space until you set the size of the container</p>
+        <div class="flex-container-inline space-evenly">
+            <div class="card red">
+                <p>red</p>
+            </div>
+            <div class="card yellow">
+                <p>yellow</p>
+            </div>
+            <div class="card green">
+                <p>green</p>
+            </div>
+        </div>
+        <div class="flex-container-inline space-between">
+            <div class="card red">
+                <p>red</p>
+            </div>
+            <div class="card yellow">
+                <p>yellow</p>
+            </div>
+            <div class="card green">
+                <p>green</p>
+            </div>
+        </div>
+        <p>inline-flex with 70% width on the second set</p>
+        <p>this results in a wrap for mobile screens</p>
+        <p>and a narrowing of the cards as things get small</p>
+        <div style="width: 100vw;">
+            <div class="flex-container-inline space-evenly">
+                <div class="card red">
+                    <p>red</p>
+                </div>
+                <div class="card yellow">
+                    <p>yellow</p>
+                </div>
+                <div class="card green">
+                    <p>green</p>
+                </div>
+            </div>
+            <div class="flex-container-inline space-between" style="width: 70%">
+                <div class="card red">
+                    <p>red</p>
+                </div>
+                <div class="card yellow">
+                    <p>yellow</p>
+                </div>
+                <div class="card green">
+                    <p>green</p>
+                </div>
+            </div>
+        </div>
+        <p>similar thing can be achieved with grid and block elements</p>
+        <p>but these won't wrap as the screen shrinks</p>
+        <div style="display: grid; grid-template-columns: 1fr 2fr;">
+            <div class="flex-container space-evenly">
+                <div class="card red">
+                    <p>red</p>
+                </div>
+                <div class="card yellow">
+                    <p>yellow</p>
+                </div>
+                <div class="card green">
+                    <p>green</p>
+                </div>
+            </div>
+            <div class="flex-container space-between">
+                <div class="card red">
+                    <p>red</p>
+                </div>
+                <div class="card yellow">
+                    <p>yellow</p>
+                </div>
+                <div class="card green">
+                    <p>green</p>
+                </div>
+            </div>
+        </div>
         <h3>full vh and vw container</h3>
         <div class="vw100vh100 card-lg">
             <p>100vh and 100vw</p>
         </div>
         <h2>CSS Grid</h2>
-        <div class="grid">
+        <div class="grid-container">
             <div class="thing1">
                 <p class="block-fill">thing1</p>
             </div>
@@ -67,6 +144,10 @@
             <li><code>"header header header"</code></li>
             <li><code>"sidebar content content"</code></li>
             <li><code>"footer footer footer"</code></li>
+            <br/>
+            <li>This is achieved with:</li>
+            <li style="list-style-type: disc"><code>grid-template-areas</code></li>
+            <li style="list-style-type: disc"><code>grid-area</code></li>
         </ul>
         <div class="grid-container-named">
             <div class="header">
@@ -83,8 +164,23 @@
             </div>
         </div>
         <h2>What even is an "Inline-GRID"???!</h2>
-        <div class="inline-grid-container">
-
+        <ul>
+            <li>it starts on a new line and spans the width of its parent</li>
+        </ul>
+        <p><em>inline-block removes whitespace between inline elements</em></p>
+        <span style="border: dotted; display: inline-block">here's some span text (inline)</span>
+        <div class="inline-block">
+            <div class="inline-grid-container three-by-three">
+                <div class="item1"><span>item1 of an inline grid</span></div>
+                <div class="item2"><span>item2</span></div>
+                <div class="item3"><span>item3</span></div>
+                <div class="item4"><span>item4</span></div>
+                <div class="item5"><span>item5</span></div>
+                <div class="item6"><span>item6</span></div>
+                <div class="item7"><span>item7</span></div>
+                <div class="item8"><span>item8</span></div>
+                <div class="item9"><span>item9</span></div>
+            </div>
         </div>
         <section>
             <h2>CSS Notes</h2>
