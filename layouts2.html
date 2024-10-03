@@ -43,7 +43,7 @@
         <div class="grid-container-3x3">
             <span class="item">item1</span>
             <span class="item">item2</span>
-            <span class="item item3">item3 I MOVED THIS</span>
+            <span class="item item3">item3 I MOVED THIS. Other stuff got rearranged. <br/><br/> awfhoawefhaowifh oaweifh oaiwe hfoaiwe hfoiawe fhoiwah foiawehf oiwe fh awfiuawh efilu hawfiluah wlefiu hawefiul haweiu fui liuh</span>
             <span class="item">item4</span>
             <span class="item">item5</span>
             <span class="item">item6</span>
@@ -51,7 +51,9 @@
             <span class="item">item8</span>
             <span class="item">item9</span>
         </div>
-        <p>can this be done with an <code>auto-fit</code> col/row specification? -- <strong>NOPE</strong></p>
+        <p>can this be done with an <code>auto-fit</code> col/row specification? -- <strong>YES, with warning... probably don't do it ever</strong></p>
+        <p><strong>WARNING:</strong> minimum row height specifications are not honored for subsequent rows in an <code>auto-fit</code> with <code>minmax</code> for <code>grid-template-rows</code> </p>
+        <p><strong>WARNING:</strong> it will throw off the sizing of columns if column &gt; 1 is specified, because the column which should have disappeared is coerced into staying</p>
         <div class="grid-container-auto2">
             <span class="item">item1</span>
             <span class="item">item2</span>
