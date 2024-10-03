@@ -1,0 +1,75 @@
+<!DOCTYPE = html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layouts 2</title>
+    <link href="styles/styles.css" rel="stylesheet">
+    <link href="styles/layouts2.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <p><a href="index.html">Home</a></p>
+    </nav>
+    <header>
+        <h1>Further layout options with CSS Grid and Flexbox:</h1>
+    </header>
+    <main>
+        <h3>A grid can automatically create and resize columns (and rows) based on screen width using</h3>
+        <h3>Create dynamic columns/rows</h3>
+        <p>use <code>grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr))</code></p>
+        <p>the number of columns is simply equal to the number of items in the container</p>
+        <ul>
+            <li>stretches when it needs to</li>
+            <li>wraps when the minimum width is hit</li>
+        </ul>
+        <div class="grid-container-auto">
+            <span class="item">item1</span>
+            <span class="item">item2</span>
+            <span class="item">item3</span>
+            <span class="item">item4</span>
+            <span class="item">item5</span>
+            <span class="item">item6</span>
+            <span class="item">item7</span>
+            <span class="item">item8</span>
+            <span class="item">item9</span>
+            <span class="item">item10</span>
+        </div>
+        <p>but you can't set the specific row/column placement for the items</p>
+        <h3>Set column and row for items</h3>
+        <p>stuff gets reordered</p>
+        <p>use <code>grid-column</code> and <code>grid-row</code></p>
+        <p>here's a manual 3x3 grid</p>
+        <div class="grid-container-3x3">
+            <span class="item">item1</span>
+            <span class="item">item2</span>
+            <span class="item item3">item3 I MOVED THIS</span>
+            <span class="item">item4</span>
+            <span class="item">item5</span>
+            <span class="item">item6</span>
+            <span class="item">item7</span>
+            <span class="item">item8</span>
+            <span class="item">item9</span>
+        </div>
+        <p>can this be done with an <code>auto-fit</code> col/row specification? -- <strong>NOPE</strong></p>
+        <div class="grid-container-auto2">
+            <span class="item">item1</span>
+            <span class="item">item2</span>
+            <span class="item item3">item3</span>
+            <span class="item">item4</span>
+            <span class="item">item5</span>
+            <span class="item">item6</span>
+            <span class="item">item7</span>
+            <span class="item">item8</span>
+            <span class="item">item9</span>
+        </div>
+        <h3>CSS Notes</h3>
+        <p>Define the grid or flexbox placement behavior for all items within</p>
+        <ul>
+            <li><code>place-items</code> -- shorthand for both align and justify</li>
+            <li><code>justify-items</code></li>
+            <li><code>align-items</code></li>
+        </ul>
+    </main>
+</body>
+</html>
