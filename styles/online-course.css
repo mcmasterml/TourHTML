@@ -139,9 +139,9 @@
     font-style:italic;
   }
   
-  li:nth-child(odd) {
-    /* color: red; */
-  }
+  /* li:nth-child(odd) {
+       color: red; 
+} */
   
   /* Misconception: this won't work!  */
   article p:first-child {
@@ -211,10 +211,10 @@
     margin-right: 5px;
   }
   
-  h3 + p::first-line {
-    /* color: red; */
+  /* h3 + p::first-line {
+     color: red; 
   
-  }
+  } */
   
   h2{
     /* background-color: orange; */

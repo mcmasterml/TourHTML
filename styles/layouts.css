@@ -1,9 +1,15 @@
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
     margin: 1rem;
 }
 
 p {
     font-size: 1.5rem;
+}
+
+ul {
+    list-style-type: circle;
+    margin-left: 3rem;
+    font-size: 1.25rem;
 }
 
 .row {
@@ -55,5 +61,6 @@ p {
 /* GRID */
 .grid {
     display: grid;
+    grid-template-columns: 1fr 1fr minmax(10px, 1fr) 3fr repeat(5, 1fr) 50px auto 100px 1fr;
+    grid-template-rows: 150px 150px;
 }
-
