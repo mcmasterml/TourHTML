@@ -58,7 +58,7 @@ code {
 
 .card-green {
     display: block;
-    background-color: rgba(0, 255, 170, 1.0);
+    background-color: rgba(255, 00, 17, 1.0);
     border: double;
     border-radius: 12px;
     box-shadow: 8px;
@@ -68,7 +68,7 @@ code {
 
 .card-blue {
     display: block;
-    background-color: rgba(20, 0, 255, 0.3);
+    background-color: rgba(20, 0, 255, 0.5);
     border: double;
     border-radius: 12px;
     box-shadow: 8px;
@@ -79,7 +79,7 @@ code {
 
 .card-yellow {
     display: block;
-    background-color: rgba(220, 220, 0, 0.4);
+    background-color: rgba(220, 220, 0, 0.6);
     border: double;
     border-radius: 12px;
     box-shadow: 8px;
