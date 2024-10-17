@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Forms</title>
     <link href="styles/styles.css" rel="stylesheet">
+    <link href="styles/forms.css" rel="stylesheet">
 </head>
 <body>
     <nav>
@@ -36,7 +37,7 @@
         </section>
         <section>
             <h2><code>&lt;datalist&gt;</code></h2>
-            <p>a datalist presents a set of options for users to choose from</p>
+            <p>It's a searchlist! a datalist presents a set of options for users to choose from</p>
             <label for="ice-cream-choice">Choose a flavor:</label>
             <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
             <datalist id="ice-cream-flavors">
@@ -69,7 +70,13 @@
         <section>
             <h2><code>&lt;meter&gt;</code></h2>
             <label for="fuel">Fuel level:</label>
-            <meter id="fuel" min="0" max="100" low="33" high="66" optimum="80" value="30">at 50/100</meter>
+            <meter id="fuel" min="0" max="100" low="33" high="66" optimum="80" value="30">at 30/100</meter>
+            <br/>
+            <label for="vibes">Vibes level:</label>
+            <meter id="vibes" min="0" max="100" low="33" high="66" optimum="80" value="90">at 90/100</meter>
+            <br/>
+            <label for="hunger">Hunger level:</label>
+            <meter id="hunger" min="0" max="100" low="33" high="66" optimum="80" value="50">at 50/100</meter>
         </section>
         <section>
             <h2><code>&lt;progress&gt;</code></h2>

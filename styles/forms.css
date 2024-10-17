@@ -1,0 +1,8 @@
+h1, h2, h3, h4, h5, h6, p, ul, li, button, form, datalist, section, textarea {
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+}
+
+ul {
+    padding-left: 3rem;
+}
