@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML5 Practice</title>
     <link href="styles/styles.css" rel="stylesheet">
-    <link href="styles/flex.css" rel="stylesheet">
+    <link href="styles/grid.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -18,8 +18,44 @@
         <section>
             <h2>Here's a section on Blue Squares</h2>
             <div class="grid-container">
-                <div><p class="grid-item-1a">stuff</p></div>
-                <div class="grid-item-4d"><p>other stuff</p></div>
+                <div class="grid-item grid-item-1a"><p>stuff</p></div>
+                <div class="grid-item grid-item-3b"><p>stuff</p></div>
+                <div class="grid-item grid-item-4d"><p>other stuff</p></div>
+            </div>
+        </section>
+        <section class="fancy-overlays">
+            <h2>Here's a section where we add some dynamic overlays</h2>
+            <div class="flex-container">
+                <div class="grid-container-fancy">
+                    <div class="card forward">
+                        <ul>
+                            <li>bullet 1</li>
+                            <li>bullet 2</li>
+                            <li>bullet 3</li>
+                        </ul>
+                    </div>
+                    <div class="card back"></div>
+                </div>
+                <div class="grid-container-fancy">
+                    <div class="card forward">
+                        <ul>
+                            <li>bullet 1</li>
+                            <li>bullet 2</li>
+                            <li>bullet 3</li>
+                        </ul>
+                    </div>
+                    <div class="card back"></div>
+                </div>
+                <div class="grid-container-fancy">
+                    <div class="card forward">
+                        <ul>
+                            <li>bullet 1</li>
+                            <li>bullet 2</li>
+                            <li>bullet 3</li>
+                        </ul>
+                    </div>
+                    <div class="card back"></div>
+                </div>
             </div>
         </section>
     </main>
