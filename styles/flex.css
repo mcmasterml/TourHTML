@@ -1,0 +1,42 @@
+h1, h2, h3, h5, h6, p, eul {
+    margin-bottom: 15px;
+}
+
+header {
+    padding-left: 1rem;
+}
+
+h4 > code {
+    font-size: 1.2rem;
+    background-color: #bbbbbb; /* Light gray background for readability */
+    color: #3c3546; /* Use a distinct color for the text */
+}
+
+ul {
+    padding: 10px 0 20px 0;
+}
+
+li {
+    padding-left: 20px;
+}
+
+li::marker {
+    content: none;
+}
+
+/* .width-100 {
+    width: 100vw;
+} */
+
+.flex-explained {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.flex-topic {
+    flex-grow: 1;
+    min-width: 384px;
+    padding-left: 2rem;
+}
