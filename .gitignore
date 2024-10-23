@@ -29,3 +29,14 @@ Temporary Items
 ### VisualStudioCode ###
 .vscode/*
 .history
+*.code-workspace
+
+# Temporary files
+*.tmp
+*.temp
+
+# IDE specific files
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
